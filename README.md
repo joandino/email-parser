@@ -47,15 +47,17 @@ $ npm run start:prod
 
 ## Test
 
+There are some test cases uploaded on the root of the project, 4 email files with different cases such as attachment, link on the body or link to a webpage to a json.
 ```bash
-# unit tests
-$ npm run test
+# start the app on watch mode
+$ npm run start:dev
 
-# e2e tests
-$ npm run test:e2e
+# send a json body within a GET request to the endpoint
+http://localhost:3000/email-parser
 
-# test coverage
-$ npm run test:cov
+{
+    "path": "../../email.eml"
+}
 ```
 
 ## Support
